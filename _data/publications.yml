@@ -1,0 +1,128 @@
+# Thumbnails live in /images. `image` is a square still; `image_mouseover` (optional) is a
+# short .mp4 that plays on hover. Papers without `image` show no thumbnail.
+- id: gemnr
+  title: "GeM-NR: Geometry-Aware Multi-View Editing for Nonrigid Scene Changes"
+  venue: BMVC, 2026
+  description: "A fast, training-free method that propagates an edit made on one image with any 2D editor to the other views, including edits that drastically change the scene geometry."
+  project_page: https://gem-nr.github.io
+  arxiv: 2606.05142
+  github: GeM-NR/gemnr
+  image: gemnr_teaser.jpg
+  authors:
+    - josef
+    - lochman
+    - kahl
+
+- id: mgs
+  title: "Matryoshka Gaussian Splatting"
+  venue: ECCV, 2026
+  description: "A single ordered set of Gaussians where rendering any prefix gives a continuous level of detail, without losing quality at full capacity."
+  project_page: https://zhilinguo.github.io/MGS
+  arxiv: 2603.19234
+  authors:
+    - zguo
+    - bzhang
+    - aktas
+    - fogarty
+    - jhu
+    - aslan
+    - wli
+    - baykal
+    - miao
+    - josef
+    - czhou
+    - wxia
+    - vasconcelos
+    - oztireli
+
+- id: corrguide
+  title: "3D-Consistent Multi-View Editing by Correspondence Guidance"
+  venue: ECCV Workshops, 2026
+  description: "A training-free guidance framework that keeps diffusion and flow image edits consistent across views, built on the idea that corresponding points should look similar after editing."
+  project_page: https://3d-consistent-editing.github.io
+  arxiv: 2511.22228
+  image: corrguide_teaser.jpg
+  authors:
+    - josef
+    - dnilsson
+    - dilee
+    - lochman
+    - kahl
+
+- id: gcref
+  title: "Geometric Consistency Refinement for Single Image Novel View Synthesis via Test-Time Adaptation of Diffusion Models"
+  venue: CVPR Workshops, 2025
+  description: "Optimising the starting noise of a diffusion sampler with an image-matching and epipolar loss makes generated novel views agree with the target pose, without training or fine-tuning."
+  project_page: https://gc-ref.github.io
+  arxiv: 2504.08348
+  github: josefbengtson/gc-ref
+  image: gcref_teaser.jpg
+  authors:
+    - josef
+    - dnilsson
+    - kahl
+
+- id: avanvs
+  title: "Adjustable Visual Appearance for Generalizable Novel View Synthesis"
+  venue: ICPRAI, 2024
+  description: "Generalizable novel view synthesis that changes a scene's weather or lighting to a target condition without scene-specific training, and interpolates smoothly between conditions."
+  project_page: https://ava-nvs.github.io
+  arxiv: 2306.01344
+  github: josefbengtson/avanvs
+  image: avanvs_teaser.jpg
+  authors:
+    - josef
+    - dnilsson
+    - ctlin
+    - buesching
+    - kahl
+  awards:
+    - "Best Paper Award"
+
+- id: flowibr
+  title: "FlowIBR: Leveraging Pre-Training for Efficient Neural Image-Based Rendering of Dynamic Scenes"
+  venue: CVPR Workshops, 2024
+  description: "An image-based renderer pre-trained on static scenes, combined with a per-scene flow field, renders dynamic scenes with an order of magnitude less optimisation time."
+  project_page: https://flowibr.github.io
+  arxiv: 2309.05418
+  authors:
+    - buesching
+    - josef
+    - dnilsson
+    - bjorkman
+
+- id: imu-earbud
+  title: "One Sensor, Whole Body: 3D Body Pose from a Single Consumer Earbud IMU"
+  venue: ACM MM Workshops, 2026
+  description: "How much of the 3D body pose a single earbud IMU can recover, and whether adding more consumer sensors actually helps."
+  arxiv: 2609.34978
+  authors:
+    - zguo
+    - bzhang
+    - urban
+    - josef
+    - aktas
+    - wli
+    - shong
+    - fogarty
+    - czhou
+    - senguel
+    - oztireli
+
+- id: imu-fusion
+  title: "Reliability-Gated Fusion of Consumer Head and Foot IMUs for Lower-Body 3D Pose"
+  venue: arXiv, 2026
+  description: "Learning how much to trust each channel of unreliable consumer head and foot IMUs for lower-body pose estimation."
+  arxiv: 2609.35764
+  authors:
+    - zguo
+    - bzhang
+    - urban
+    - josef
+    - aktas
+    - wli
+    - shong
+    - fogarty
+    - czhou
+    - senguel
+    - oztireli

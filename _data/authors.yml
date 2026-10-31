@@ -1,0 +1,77 @@
+# Add a `website:` to anyone you want linked; authors without one render as plain text.
+josef:
+  first_name: Josef
+  last_name: Bengtson
+  website: https://josefbengtson.github.io
+  is_me: true
+kahl:
+  first_name: Fredrik
+  last_name: Kahl
+lochman:
+  first_name: Yaroslava
+  last_name: Lochman
+dnilsson:
+  first_name: David
+  last_name: Nilsson
+dilee:
+  first_name: Dong In
+  last_name: Lee
+ctlin:
+  first_name: Che-Tsung
+  last_name: Lin
+buesching:
+  first_name: Marcel
+  last_name: Büsching
+bjorkman:
+  first_name: Mårten
+  last_name: Björkman
+zguo:
+  first_name: Zhilin
+  last_name: Guo
+bzhang:
+  first_name: Boqiao
+  last_name: Zhang
+aktas:
+  first_name: Hakan
+  last_name: Aktas
+fogarty:
+  first_name: Kyle
+  last_name: Fogarty
+jhu:
+  first_name: Jeffrey
+  last_name: Hu
+aslan:
+  first_name: Nursena
+  middle_name: Koprucu
+  last_name: Aslan
+wli:
+  first_name: Wenzhao
+  last_name: Li
+baykal:
+  first_name: Canberk
+  last_name: Baykal
+miao:
+  first_name: Albert
+  last_name: Miao
+czhou:
+  first_name: Chenliang
+  last_name: Zhou
+wxia:
+  first_name: Weihao
+  last_name: Xia
+vasconcelos:
+  first_name: Cristina
+  middle_name: Nader
+  last_name: Vasconcelos
+oztireli:
+  first_name: Cengiz
+  last_name: Oztireli
+urban:
+  first_name: Oszkár
+  last_name: Urbán
+shong:
+  first_name: Siyu
+  last_name: Hong
+senguel:
+  first_name: Ali
+  last_name: Senguel

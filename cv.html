@@ -1,0 +1,71 @@
+---
+layout: cv
+title: CV - Josef Bengtson
+---
+{% comment %}
+  Web version of the PDF CV (CV/Josef_CV_2026/main.tex), same layout:
+  label column | vertical rule | content. Content lives in _data/cv.yml.
+{% endcomment %}
+<link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  .cv { font-family: "Yrsa", Georgia, serif; color: #111; font-size: 1.0625rem; line-height: 1.3; max-width: 52rem; margin: 0 auto; }
+  .cv a { color: rgb(34,120,60); text-decoration: none; }
+  .cv a:hover { text-decoration: underline; }
+  .cv h1, .cv h2 { font-family: "Yrsa", Georgia, serif; color: #111; }
+  .cv h1 { font-size: 2.4rem; font-weight: 400; text-align: center; margin: 0.5rem 0 1.25rem; }
+  .cv-contact p { font-size: 0.9rem; margin: 0.1rem 0; overflow-wrap: anywhere; }
+  .cv h2 { font-size: 1.5rem; font-weight: 400; margin: 1.1rem 0 0.35rem; padding-bottom: 0.05rem; border-bottom: 1px solid #111; }
+  .cv-row { display: grid; grid-template-columns: 7.5rem 1fr; margin-bottom: 0.45rem; }
+  .cv-label { text-align: right; padding-right: 0.55rem; font-size: 0.95rem; padding-top: 0.1rem; }
+  .cv-sublabel { display: block; font-size: 0.75rem; margin-top: 0.15rem; }
+  .cv-body { min-width: 0; overflow-wrap: break-word; border-left: 1.5px solid #111; padding-left: 0.55rem; padding-top: 0.1rem; }
+  .cv-body p { margin: 0; }
+  .cv-title { font-weight: 700; }
+  .cv-small { font-size: 0.82rem; line-height: 1.35; }
+  .cv-me { background: rgb(220,236,222); padding: 0 2px; }
+  .cv-updated { text-align: right; font-style: italic; font-size: 0.85rem; margin-top: 2rem; }
+  @media (max-width: 640px) {
+    .cv { font-size: 1rem; }
+    .cv-row { grid-template-columns: 5.2rem 1fr; }
+    .cv-label { font-size: 0.82rem; }
+  }
+</style>
+
+<div class="cv">
+  <h1>{{ site.name }}</h1>
+  <div class="cv-contact">
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p><a href="{{ site.url }}">{{ site.url }}</a></p>
+    <p><a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">https://scholar.google.com/citations?user={{ site.google_scholar }}</a></p>
+    {% assign cv_pdf = site.static_files | where: "path", "/files/Josef_Bengtson_CV.pdf" | first %}
+    {% if cv_pdf %}<p><a href="{{ cv_pdf.path | relative_url }}">PDF version</a></p>{% endif %}
+  </div>
+
+  {% assign cv = site.data.cv %}
+
+  <h2>Timeline</h2>
+  {% for e in cv.timeline %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Selected publications</h2>
+  {% for e in cv.selected_publications %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Further publications</h2>
+  {% for e in cv.further_publications %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Awards</h2>
+  {% for e in cv.awards %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Teaching</h2>
+  {% for e in cv.teaching %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Supervision</h2>
+  {% for e in cv.supervision %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Invited talks</h2>
+  {% for e in cv.invited_talks %}{% include cv_entry.html e=e %}{% endfor %}
+
+  <h2>Languages</h2>
+  <p>{{ cv.languages }}</p>
+
+  <p class="cv-updated">Last updated: {{ site.time | date: "%B %-d, %Y" }}</p>
+</div>

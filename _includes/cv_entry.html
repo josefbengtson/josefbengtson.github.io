@@ -1,0 +1,11 @@
+{% assign e = include.e %}
+<div class="cv-row">
+  <div class="cv-label">{{ e.label }}{% if e.sublabel %}<span class="cv-sublabel">{{ e.sublabel }}</span>{% endif %}</div>
+  <div class="cv-body">
+    {% if e.title %}<p class="cv-title">{{ e.title }}</p>{% endif %}
+    {% if e.authors %}<p class="cv-small">{{ e.authors | replace: "@me", '<span class="cv-me">Josef Bengtson</span>' }}</p>{% endif %}
+    {% if e.arxiv %}<p class="cv-small"><a href="https://arxiv.org/abs/{{ e.arxiv }}">arXiv:{{ e.arxiv }}</a></p>{% endif %}
+    {% for line in e.details %}<p class="cv-small">{{ line }}</p>{% endfor %}
+    {% if e.text %}<p>{{ e.text }}</p>{% endif %}
+  </div>
+</div>

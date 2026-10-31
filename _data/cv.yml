@@ -1,0 +1,90 @@
+# Content of the web CV page (/cv/). Mirrors CV/Josef_CV_2026/main.tex – keep the two in sync.
+# Entry fields: label (left column), sublabel (small text under the label), title (bold),
+# details (list of small lines), text (plain line), html allowed.
+# In author strings, "@me" renders as the highlighted "Josef Bengtson".
+
+timeline:
+  - label: 2022–2027
+    title: PhD in the Computer Vision group
+    details:
+      - Chalmers University of Technology, Gothenburg
+      - Research on 3D vision and generative models with a focus on 3D editing and sparse view reconstruction
+      - "Supervised by Fredrik Kahl. Expected defence: August 2027"
+  - label: 2022–2027
+    title: WASP Graduate School
+    details:
+      - Wallenberg AI, Autonomous Systems and Software Program (WASP)
+      - PhD funded by WASP, graduate school course requirements completed
+  - label: "2026"
+    title: Visiting researcher, University of Cambridge
+    details:
+      - Core Lab, Cambridge, UK, January–April 2026
+      - Hosted by Cengiz Öztireli, funded by WASP
+  - label: 2020–2022
+    title: Master of Science in Systems, Control and Mechatronics
+    details:
+      - Chalmers University of Technology, Gothenburg
+  - label: 2015–2018
+    title: Bachelor of Science in Engineering Mathematics
+    details:
+      - Chalmers University of Technology, Gothenburg
+
+selected_publications:
+  - label: BMVC 2026
+    title: "GeM-NR: Geometry-aware multi-view editing for nonrigid scene changes"
+    authors: "@me, Yaroslava Lochman, Fredrik Kahl"
+    arxiv: 2606.05142
+  - label: ECCVW 2026
+    title: 3D-consistent multi-view editing by correspondence guidance
+    authors: "@me, David Nilsson, Dong In Lee, Yaroslava Lochman, Fredrik Kahl"
+    arxiv: 2511.22228
+  - label: CVPRW 2025
+    title: Geometric consistency refinement for single image novel view synthesis via test-time adaptation of diffusion models
+    authors: "@me, David Nilsson, Fredrik Kahl"
+    arxiv: 2504.08348
+  - label: ICPRAI 2024
+    sublabel: Best paper
+    title: Adjustable visual appearance for generalizable novel view synthesis
+    authors: "@me, David Nilsson, Che-Tsung Lin, Marcel Büsching, Fredrik Kahl"
+    arxiv: 2306.01344
+
+further_publications:
+  - label: ECCV 2026
+    title: Matryoshka Gaussian splatting
+    authors: "Z. Guo, B. Zhang, H. Aktas, K. Fogarty, J. Hu, N. K. Aslan, W. Li, C. Baykal, A. Miao, @me, C. Zhou, W. Xia, C. N. Vasconcelos, C. Oztireli"
+    arxiv: 2603.19234
+  - label: ACM MMW 2026
+    title: "One sensor, whole body: 3D body pose from a single consumer earbud IMU"
+    authors: "Z. Guo, B. Zhang, O. Urbán, @me, H. Aktas, W. Li, S. Hong, K. Fogarty, C. Zhou, A. Senguel, C. Oztireli"
+    arxiv: 2609.34978
+  - label: arXiv 2026
+    title: Reliability-gated fusion of consumer head and foot IMUs for lower-body 3D pose
+    authors: "Z. Guo, B. Zhang, O. Urbán, @me, H. Aktas, W. Li, S. Hong, K. Fogarty, C. Zhou, A. Senguel, C. Oztireli"
+    arxiv: 2609.35764
+  - label: CVPRW 2024
+    title: "FlowIBR: Leveraging pre-training for efficient neural image-based rendering of dynamic scenes"
+    authors: "Marcel Büsching, @me, David Nilsson, Mårten Björkman"
+    arxiv: 2309.05418
+
+awards:
+  - label: "2026"
+    text: Best Poster Award, WASP Winter Conference
+  - label: "2024"
+    text: Best Paper Award, International Conference on Pattern Recognition and Artificial Intelligence (ICPRAI)
+
+teaching:
+  - label: 2023–2026
+    text: Teaching assistant for master's level courses in computer vision, deep learning and image analysis (Chalmers)
+
+supervision:
+  - label: "2026"
+    title: Main supervisor, master's thesis (pair of students), Chalmers
+    details:
+      - Self-supervised 3D semantic occupancy for parking scenarios (April–December 2026)
+      - Co-supervised with Lars Hammarstrand; examiner Fredrik Kahl
+
+invited_talks:
+  - label: "2026"
+    text: "<i>Adapting Generative Models for 3D Consistency</i>, WASP Lighthouse, Luleå University of Technology, May 2026"
+
+languages: Swedish (native), English (fluent), Hindi (conversational)

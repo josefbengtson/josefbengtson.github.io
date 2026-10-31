@@ -1,0 +1,74 @@
+---
+layout: default
+title: Josef Bengtson
+---
+
+<!-- Hero Section -->
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex flex-col items-center text-center{% if site.show_portrait %} md:text-left md:flex-row md:items-start{% endif %} gap-8">
+      <!-- Portrait (hidden until show_portrait: true in _config.yml) -->
+      {% if site.show_portrait %}
+      <div class="flex-shrink-0">
+        <img src="{{ '/images/portrait.jpg' | relative_url }}"
+             alt="{{ site.name }}"
+             class="w-48 h-48 md:w-56 md:h-56 object-cover">
+      </div>
+      {% endif %}
+
+      <!-- Bio -->
+      <div class="flex-1">
+        <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
+          {{ site.name }}
+        </h1>
+        <p class="text-text-muted font-sans mt-1">{{ site.position }}</p>
+        <div class="text-text-body mt-4 max-w-prose leading-relaxed prose{% unless site.show_portrait %} mx-auto{% endunless %}">
+          {{ site.description | markdownify }}
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap justify-center{% if site.show_portrait %} md:justify-start{% endif %} gap-4 mt-6">
+          <a href="{{ '/cv/' | relative_url }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            {% include icons/file.html class="w-4 h-4 mr-1.5" %}
+            CV
+          </a>
+
+          <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            <i class="ai ai-google-scholar mr-1.5"></i>
+            Scholar
+          </a>
+
+
+          <a href="mailto:{{ site.email }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            {% include icons/envelope.html class="w-4 h-4 mr-1.5" %}
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights Section -->
+<section class="relative py-12 md:py-16">
+  <!-- Background with faded edges -->
+  <div class="absolute inset-0 bg-surface-muted" style="mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);"></div>
+  <div class="relative max-w-4xl mx-auto px-6">
+    <h2 class="font-display text-2xl font-semibold text-text mb-8">Highlights</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for highlight in site.data.highlights %}
+        {% include highlight.html h=highlight %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="font-display text-2xl font-semibold text-text mb-8">Publications</h2>
+    {% for pub in site.data.publications %}
+      {% include publication.html pub=pub %}
+    {% endfor %}
+  </div>
+</section>

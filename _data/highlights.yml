@@ -1,0 +1,24 @@
+# Large square cards at the top of the home page. `video` (optional .mp4) autoplays in a loop.
+- id: gemnr
+  title: "GeM-NR"
+  description: "Multi-view editing for nonrigid scene changes. BMVC 2026."
+  url: "https://gem-nr.github.io"
+  image: gemnr_teaser.jpg
+
+- id: corrguide
+  title: "Correspondence Guidance"
+  description: "3D-consistent multi-view editing with diffusion and flow models."
+  url: "https://3d-consistent-editing.github.io"
+  image: corrguide_teaser.jpg
+
+- id: gcref
+  title: "GC-Ref"
+  description: "Geometrically consistent single-image novel view synthesis."
+  url: "https://gc-ref.github.io"
+  image: gcref_teaser.jpg
+
+- id: avanvs
+  title: "AVA-NVS"
+  description: "Adjustable appearance for novel view synthesis. Best Paper, ICPRAI."
+  url: "https://ava-nvs.github.io"
+  image: avanvs_teaser.jpg
