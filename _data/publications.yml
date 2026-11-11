@@ -1,5 +1,6 @@
 # Thumbnails live in /images. `image` is a square still; `image_mouseover` (optional) is a
 # short .mp4 that plays on hover. Papers without `image` show no thumbnail.
+# `hide_on_home: true` keeps a paper off the home page (the CV page reads _data/cv.yml instead).
 - id: gemnr
   title: "GeM-NR: Geometry-Aware Multi-View Editing for Nonrigid Scene Changes"
   venue: BMVC, 2026
@@ -111,6 +112,7 @@
 
 - id: imu-fusion
   title: "Reliability-Gated Fusion of Consumer Head and Foot IMUs for Lower-Body 3D Pose"
+  hide_on_home: true
   venue: arXiv, 2026
   description: "Learning how much to trust each channel of unreliable consumer head and foot IMUs for lower-body pose estimation."
   arxiv: 2609.35764

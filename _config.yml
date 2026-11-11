@@ -36,7 +36,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://josefbengtson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: josefbengtson
 google_scholar: wjNsZRkAAAAJ # the user= part of your Google Scholar profile URL
-show_portrait: false # set to true once images/portrait.jpg (square, ~600x600) is a real photo
+show_portrait: true # images/portrait.jpg: square head-and-shoulders crop (460x460, from profile_picture/FB_IMG_1690866444888.jpg)
 
 permalink: pretty # serves cv.html at /cv/
 

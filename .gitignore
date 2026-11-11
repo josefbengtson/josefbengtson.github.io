@@ -69,3 +69,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Original, uncropped portrait photos (keep local; only images/portrait.jpg is published)
+profile_picture/
